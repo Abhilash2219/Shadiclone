@@ -1,0 +1,898 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1355px; /* Adjust width to fit the image */
+    margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    display: block;
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+#loginBtn{
+    background-color: #555;
+}
+.top-right-buttons button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.top-right-buttons button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+.trademark-notice {
+    
+    position: relative;
+    margin-top: -3%;
+    text-align: center;
+    padding:0px 5px;
+    margin-left: 550px;
+    border-radius:5%;
+    margin-right: 550px;
+    background-color: rgb(223, 91, 91);
+    color: white;
+    font-size: 20px;
+
+    
+}
+
+/* Modal Container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #6D5E63;
+    margin: 4% 60%; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    max-width: 370px; /* Limit the width */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+/*login styles*/
+
+
+.login-container {
+    
+    padding: 20px 30px;
+    border-radius: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+  
+  /* Input Group Styles */
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 105%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-left: -5%;
+  }
+  #email,#password{
+    font-weight: bolder;
+  }
+  /* Submit Button Styles */
+  
+  .submitbtn {
+    display: flex;
+    flex-direction: column;
+    background-color: #6D5E63;
+
+  }
+  
+  .btn1 {
+    
+    width: 80%; 
+    height: 70%;
+    margin-left: -76%;
+    background-color: #AA0000;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Forgot Password Styles */
+  
+  .forgot-password {
+    white-space: nowrap;
+    font-size: 12px;
+    color: rgb(19, 18, 18);
+    font-weight: bold;
+    margin-left: -80%;
+    background-color: #6D5E63;
+  }
+  
+  /* Footer Styles */
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-left: 30%;
+  }
+  
+  /* Button Styles */
+  
+  .btn2 {
+    padding: 1px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+    margin-left: -75%;
+    height: 60%;
+  }
+  
+  .btn3 {
+    padding: 1px 20px;
+    margin-left: -75%;
+    height: 60%;
+    background-color: #3420eb;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+  }
+ 
+  /*login style close*/
+
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Join Now Modal Styles */
+.join-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.join-modal-content {
+    background-color: #ffffff;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Adjust the width based on your design */
+    max-width: 400px; /* Limit the width */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.join-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.join-close:hover,
+.join-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Input Group Styles */
+.join-input-group {
+    margin-bottom: 15px;
+}
+
+.join-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.join-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit Button Styles */
+.join-submitbtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.join-submitbtn:hover {
+    background-color: #2980b9;
+}
+
+/* Additional Button Styles */
+.join-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-btn2,
+.join-btn3 {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: 48%;
+}
+
+.join-btn3 {
+    background-color: #3420eb;
+    color: white;
+}
+
+.join-btn2:hover,
+.join-btn3:hover {
+    opacity: 0.8;
+}
+
+.join-forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+}
+
+.join-forgot-password a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.join-forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.box{
+    margin-left: 350px;
+    height: 650px;
+    width: 800px;
+    background-color: white;
+    
+}
+h2{
+    color: rgb(229, 26, 26);
+    text-decoration: underline;
+    text-align: center;
+}
+.box1{
+    display: flex;
+    margin-top: 8%;
+    
+}
+
+
+
+#name{
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#lname{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+h4{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.button{
+    margin: 5px;
+    margin-left: 20px;
+}
+.btn{
+    background-color: white;
+    padding: 9px 14px;
+    border-radius:5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color:rgb(115, 215, 115)
+}
+.date{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.Day,.Month,.Year{
+    font-weight: bold;
+    width: 90px;
+    height: 30px;
+    border-radius: 0px
+}
+.Day{
+    margin-left: -0.6%;
+    border-radius: 0px;
+}
+.Year{
+    margin-left:-0.6%;
+    border-radius: 0px;
+}
+.select{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+.footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#one{
+    
+    background-color: #c82828;
+    color: white;
+    border-radius:5px;
+    padding: 9px 14px;
+    margin-left: -60%;
+    cursor: pointer;
+}
+#two{
+    
+    padding: 9px 1px;
+    width: 50px;
+    margin-left: 40%;
+    cursor: pointer;
+
+}
+#three{
+    background-color: #4267b2;
+    color: white;
+    padding: 9px 14px;
+    width: 100px;
+    margin-right: -60%;
+    cursor: pointer;
+
+}
+
+
+
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    font-size: 106px;
+    gap: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+.feature {
+    max-width: 300px;
+    text-align: center;
+    font-size: 50%;
+}
+
+.feature-icon {
+    width: 300px;
+    height: 180px;
+    gap: 0%;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #555;
+}
+
+#profiles {
+    text-align: center;
+}
+
+.browse-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+.browse-section h2 {
+    color: #d32f2f;
+    margin-bottom: 30px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.category h3 {
+    color: #333;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.category p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.category button {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    padding:0px 20px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 25%;
+}
+
+.category button:hover {
+    background-color: #008c7a;
+}
+
+
+.blog-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.blog-post {
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-post h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    font-size: 16px;
+    color: #00bfa5;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.meet-members {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.meet-members h2 {
+    font-size: 28px;
+    color: #d32f2f;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-left: 10%;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+.icon {
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.icon img {
+    width: 160px;
+    height: 100px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container2 {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+.title {
+    color: #d1332f;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #00a3ff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.card {
+    width: 43%;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 20px;
+    scroll-snap-type: x mandatory; /* For snapping effect */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px; /* Adjust the width based on your design */
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; /* Align the card at the start when scrolling */
+    flex-shrink: 0; /* Prevent the card from shrinking */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+.arrow-left {
+    margin-right: 10px;
+}
+
+.arrow-right {
+    margin-left: 10px;
+}
+
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0%;
+    
+}
+
+.header h1 {
+    color: #d1332f;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.header .intro {
+    font-weight: bold;
+    color: #555;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 8%;
+    text-align: justify;
+    margin-right: 10%;
+}
+
+.header .highlight {
+    font-family: 'Cursive', serif;
+    font-size: 18px;
+    color: #d1332f;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    
+}
+
+
+.column {
+    width: 15%;
+}
+.about{
+    font-size: 20px;
+    width: 200px;
+    margin-left:5%;
+}
+
+.column h3 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #d1332f;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.column p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.column ul li a:hover {
+    color: #d1332f;
+}
+
+.column a {
+    color: #d1332f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media {
+    float: left;
+}
+
+.social-media img {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.follow-us {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer-logo {
+    clear: both;
+    margin-top: 20px;
+    margin-left: 80%;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 60%;
+}
+
+.last {
+    margin-left: 40px;
+}
+
+
+
+
+#name{
+    background-color: white;
+    text-align: left;
+    width: 100px ;
+    border-color: none;
+
+}
+
+
+
+
+
+
+
+
+
+

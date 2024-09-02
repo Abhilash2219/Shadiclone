@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(121, 115, 115);
+}
+.box{
+    margin-left: 350px;
+    height: 650px;
+    width: 800px;
+    background-color: white;
+    
+}
+h2{
+    color: rgb(229, 26, 26);
+    text-decoration: underline;
+    text-align: center;
+}
+.box1{
+    display: flex;
+    margin-top: 8%;
+    
+}
+
+
+
+#name{
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#lname{
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+h4{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.button{
+    margin: 5px;
+    margin-left: 20px;
+}
+.btn{
+    background-color: white;
+    padding: 9px 14px;
+    border-radius:5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color:rgb(115, 215, 115)
+}
+.date{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.Day,.Month,.Year{
+    font-weight: bold;
+    width: 90px;
+    height: 30px;
+    border-radius: 0px
+}
+.Day{
+    margin-left: -0.6%;
+    border-radius: 0px;
+}
+.Year{
+    margin-left:-0.6%;
+    border-radius: 0px;
+}
+.select{
+    width: 750px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+.footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#one{
+    
+    background-color: #c82828;
+    color: white;
+    border-radius:5px;
+    padding: 9px 14px;
+    margin-left: -17%;
+}
+#two{
+    
+    padding: 9px 14px;
+    width: 150px;
+
+}
+#three{
+    background-color: #4267b2;
+    color: white;
+    padding: 9px 14px;
+    width: 200px;
+    margin-right: -18%;
+
+}

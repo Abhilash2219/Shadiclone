@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadhiclone.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images\back ground .jpg" alt="Background Image" class="image">
+        <div class="top-right-buttons">
+            <button id="loginBtn">Login</button>
+            <button id="joinNowBtn">Join-Now</button>
+        </div>
+        <div class="trademark-notice">
+            SHADI® trademark notice
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="login-container">
+            <form id="loginForm">
+                
+                <div class="input-group">
+                    
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="footer">
+                    <div class="submitbtn">
+                        <button type="submit" class="btn1">SIGN IN</button>
+                        <a href="#" class="forgot-password">Forgot your password?</a>
+                    </div>
+                    
+    
+                    <div class="button-container">
+                        
+                        <button class="btn2">
+                            G SIGN IN
+                        </button>
+                        
+                        <button class="btn3"> f SIGN IN</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <div id="joinNowModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="register-container">
+                <form>
+                    <h2>REGISTER NEW MEMBER</h2>
+                    <div class="box1">
+                        <div class="box2">
+                            <input placeholder="First Name" id="name" name="name" value="">
+                        </div>
+                        <div class="box2">
+                            <input placeholder="Last Name" id="lname" name="lname" value="">
+                        </div>
+                    </div>
+                    <h4>Gender</h4>
+                    <div class="button">
+                        <button class="btn">Female</button>
+                        <button class="btn">Male</button>
+                    </div>
+                    <h4>Looking for</h4>
+                    <div class="button">
+                        <button class="btn">Female</button>
+                        <button class="btn">Male</button>
+                    </div>
+                    <h4>Date of Birth</h4>
+                    <div class="date">
+                        <select class="Month">
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <select class="Day">
+                            <option>Day</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select class="Year">
+                            <option>Year</option>
+                            <option>2006</option>
+                            <option>2005</option>
+                            <option>2004</option>
+                            <option>2003</option>
+                            <option>2002</option>
+                            <option>2001</option>
+                            <option>2000</option>
+                            <option>1999</option>
+                            <option>1998</option>
+                            <option>1997</option>
+                            <option>1996</option>
+                            <option>1995</option>
+                        </select>
+                    </div>
+                    <select class="select">
+                        <option>Religion</option>
+                        <option>Hindu</option>
+                        <option>Jain</option>
+                    </select>
+                    <select class="select">
+                        <option>Education</option>
+                        <option>B.E</option>
+                        <option>M.B.B.S</option>
+                    </select>
+                    <select class="select">
+                        <option>Country</option>
+                        <option>India</option>
+                        <option>Switzerland</option>
+                    </select>
+                    <div class="footer">
+                        <button id="one">SIGN UP WITH EMAIL</button>
+                        <button id="three">f Sign up</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    <div class="features">
+            <div class="feature">
+                <img src="images\people.png" alt="People Icon" class="feature-icon">
+                <p>Millions of people register on Shadi.com looking for someone special. This site is for serious singles looking for a long-lasting relationship.</p>
+            </div>
+            <div class="feature">
+                <img src="images\hat.png" alt="Education Icon" class="feature-icon">
+                <p>80% of our members are highly educated. Most of them are successful professionals in their selected fields.</p>
+            </div>
+            <div class="feature">
+                <img src="images\connect.png" alt="Matchmaking Icon" class="feature-icon">
+                <p>Shadi.com uses a smart matchmaking system. We present you matches based on current location, education level & lifestyle choices.</p>
+            </div>
+    </div>
+    
+    <div class="browse-section">
+            <h2 id="profiles">BROWSE MATRIMONIAL<br> PROFILES</h2>
+            <div class="categories">
+                <div class="category">
+                    <h3>RELIGION</h3>
+                    <p>Hindu | Muslim | Christian | Sikh | Budhist | Jain</p>
+                    <button>READ MORE</button>
+                </div>
+                <div class="category">
+                    <h3>CASTE</h3>
+                    <p>Agarwal | Arora | Brahmin | Gupta | Khatri | Iyer | Kayastha | Maratha | Rajput | Sunni | Swetambar</p>
+                    <button>READ MORE</button>
+                </div>
+                <div class="category">
+                    <h3>STATES</h3>
+                    <p>California | New York | Texas | New Jersey | Virginia | Illinois | Florida | Pennsylvania | Michigan | Georgia</p>
+                    <button>READ MORE</button>
+                </div>
+                
+            </div>
+        </div>   
+        
+        <div class="blog-section">
+            <div class="blog-post">
+                <h3>Relationship Advise</h3>
+                <img src="images\first.jpg" alt="True Love Develops in Stages">
+                <p>Here we have experts who work hard to write blogs on relationships, marriage, dating and finding love, giving you vista and motivation to have a great love life. Following these tips and advice can help you in your relationship journey. Nowadays, people find their love by socializing, traveling or using a dating app/website.</p>
+                <a href="#" class="read-more">read more</a>
+            </div>
+            <div class="blog-post">
+                <h3>Find Someone Special Near You</h3>
+                <img src="images\second.jpg" alt="Best Matrimony in Irvine, California, USA">
+                <p>Connect with your soulmate that can be nearby or within your city. Our members are committed to looking for long-term healthy relationships. This platform will help you to find love and give you a taste of meaningful connection.</p>
+                <a href="#" class="read-more">read more</a>
+            </div>
+            <div class="blog-post">
+                <h3>How To Make A Great Matrimonial Profile</h3>
+                <img src="images\third.jpg" alt="Great Matrimonial Profile">
+                <p>Creating an effective profile on a matchmaking site like Shadi.com is crucial for finding a meaningful relationship. This blog offers valuable tips for crafting a compelling profile, emphasizing the importance of honesty, clear intentions, and positive language.</p>
+                <a href="#" class="read-more">read more</a>
+            </div>
+        </div>
+    
+        <div class="meet-members">
+            <h2 id="professional">MEET OUR MEMBERS - SUCCESSFUL<br> PROFESSIONAL SINGLES</h2>
+        </div>
+
+
+        <div class="container1">
+            <div class="box">
+                <div class="icon">
+                    <img src="images\people.png" alt="User Icon">
+                </div>
+                <p>We have members from all religions and ages. Our most popular age group is from 27 - 60. Almost all our singles are successful professionals and businessmen. Creating a great profile is essential in online matchmaking and adding your best photo to your profile. We offer abundant tips and relationship advice through our blogs. It is our passion to help you in the best possible way.</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <img src="images\shield-icon-v3.png" alt="Shield Icon">
+                </div>
+                <p>Shadi.com is an international matchmaking platform. Through which people can find love and long lasting relationships. Our profiles are verified with cell phone and email verification. We make use of the latest technology for fraud detection and SSL encryption. Non-active users are removed from our network. We are committed to providing a safe web service for like-minded singles in your region.</p>
+            </div>
+        </div>
+
+
+        <div class="container2">
+            <h1 class="title">MUST READ BEFORE FIRST DATE</h1>
+            <div class="content-wrapper">
+                <div class="arrow arrow-left">&laquo;</div>
+                <div class="content">
+                    <div class="card">
+                        <h2>Dating 101:</h2>
+                        <p>When on a date, switch off your phone. Nothing is more insulting to a girl than a man answering every call while on a date. You are allowed to make a small deal about turning off your phone at the start of the date with a comment like "Now we will not be disturbed". Power down your phone or lose your date. Can't have both.</p>
+                        <img src="images\fourth.jpg" alt="Date Image 1">
+                    </div>
+                    
+                    <div class="card">
+                        <h2>Dating 102:</h2>
+                        <p>Leave your ego at home. A lot of guys are too sensitive. If she giggles because you made a small mistake, instead of getting angry or defensive, try laughing at yourself. Remember she is as nervous as you are (or more!) and it could just be her nerves showing.</p>
+                        <p>Another ego issue is your treatment of people around you. Waiters, valet, taxi drivers, or cooks may not follow your instructions. Your interaction with these people will show her how you will act with her when the newness has worn out. Always be kind, generous, and forgiving. (That last one is something we should all aspire to all the time).</p>
+                        <img src="images\fifth.jpg" alt="Date Image 2">
+                    </div>
+                    
+                </div>
+                <div class="arrow arrow-right">&raquo;</div>
+            </div>
+        </div>
+
+
+    <div class="second-last">
+        <div class="header">
+            <h1>SHADI.COM BEST ONLINE <br>MATRIMONY SITE</h1>
+            <p class="intro"><span class="highlight">Shadi</span> We have been making memorable memories through matchmaking for more than 20 years. It all began with creating many successful marriages for family and friends in upstate New York. To take the essence of matchmaking to the next level Shadi.com was created. Most important component of our network is that users find their match through our platform. We are proud to mention that millions of users have been impacted with our online marriage portal with happy endings. Our commitment lies in helping members meet someone special for long lasting relationship. Today, Shadi.com is known worldwide as one of the top introductions and matrimonial services provider. We are happy to welcome you to our matchmaking network and wish you success every step of the way.</p>
+        </div>
+    </div>
+    <div class="footer">
+            <div class="column">
+                <h3>ABOUT SHADI®</h3>
+                <div class="about">
+                <p>Shadi®.com is a <a href="#">registered</a> and <a href="#">trademarked</a> corporation based in the USA. We are a leading international matchmaking company for singles globally. Through our network we want to make the process of relationship journey relatively effortless. All profiles are checked manually with phone verification to ensure a safe environment for the users.</p>
+                </div>
+                
+            </div>
+            <div class="column">
+                <h3>NEED HELP?</h3>
+                <ul>
+                    <li><a href="#">Member Login</a></li>
+                    <li><a href="#">Shadi® 101</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Member Support</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Helpful Tips</a></li>
+                    <li><a href="#">Submit story</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>PRIVACY & YOU</h3>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>MORE</h3>
+                <ul>
+                    <li><a href="#">Top Ranking Cities</a></li>
+                    <li><a href="#">Parent Involved</a></li>
+                    <li><a href="#">Intimate Cozy Wedding</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+    </div>
+
+    
+        
+<!--fotter section-->
+        <footer>
+            <div class="follow-us">
+                Follow us on:
+            </div>
+             <br>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><img src="images\facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images\Instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images\youtube.png" alt="YouTube"></a>
+            </div>
+            
+            <div class="last">
+                <div class="copyright">
+                    All product and service marks contained herein are the trademarks of their respective owners.<br> 
+                                                Copyright © 2021 Shadi.com  All rights reserved.
+                </div>
+                <div class="footer-logo">
+                    <img src="images\logo.png" alt="SHUJAB Logo">
+                </div>
+            </div>
+            
+        </footer>
+        <div id="name">Created by Abhilash</div>
+        <script src="main.js"></script>
+</body>
+</html>

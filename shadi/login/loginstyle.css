@@ -1,0 +1,109 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b39c9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Login Container Styles */
+  
+  .login-container {
+    background-color: #6d5e63;
+    padding: 20px 30px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  /* Input Group Styles */
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 105%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-left: -5%;
+  }
+  #email,#password{
+    font-weight: bolder;
+  }
+  /* Submit Button Styles */
+  
+  .submitbtn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn1 {
+    padding: 4px 10px;
+    width: 80%; 
+    height: 70%;
+    margin-left: 35%;
+    background-color: #AA0000;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Forgot Password Styles */
+  
+  .forgot-password {
+    white-space: nowrap;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    margin-left: 15%;
+  }
+  
+  /* Footer Styles */
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-left: 40%;
+  }
+  
+  /* Button Styles */
+  
+  .btn2 {
+    padding: 1px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+    margin-left: -50%;
+    height: 60%;
+  }
+  
+  .btn3 {
+    padding: 1px 20px;
+    margin-left: -50%;
+    height: 60%;
+    background-color: #3420eb;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+  }
